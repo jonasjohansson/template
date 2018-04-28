@@ -120,30 +120,40 @@ body > div {
 
 /* responsive */
 
-@media (max-width:799px) {
+@media (max-width:699px) {
 	h2 {
 		text-align:center;
 	}
 }
 
-@media (min-width:800px) {
+@media (min-width:700px) {
 	#intro,
 	#resume {
-		width:40%;
+		width:50%;
 		float:right;
 		clear:right;
 	}
 	#work {
 		position:fixed;
 		left:0;
-		width:60%;
+		width:50%;
 		height:100%;
 		overflow:scroll;
 		-webkit-overflow-scrolling:touch;
 	}
 }
 
-@media (min-width:1200px) {
+@media (min-width:1000px) {
+	#intro {
+		padding-bottom:0;
+	}
+	#intro,
+	#resume {
+		width:40%;
+	}
+	#work {
+		width:60%;
+	}
 	#work section ul {
 		column-count:2;
 	}
