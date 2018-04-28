@@ -7,7 +7,7 @@ function init(){
 		image.onload = function(){
 			div.style.opacity = 1;
 		}
-		let title = getTitle(image.src);
+		let title = getTitle(image.src).trim();
 		let h4 = document.createElement('h4');
 		h4.innerHTML = title;
 		image.alt = title;

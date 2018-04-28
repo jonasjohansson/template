@@ -68,13 +68,13 @@ body > div {
 	background-color:var(--gray);
 }
 
-#work div {
+#work li {
 	position:relative;
 	width:100%;
 	transition:opacity 600ms ease-in 500ms;
 }
 
-#work div:not(:last-of-type) {
+#work li:not(:last-of-type) {
 	margin-bottom:calc(var(--base)*0.5);
 }
 
