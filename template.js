@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', init);
 
 function init(){
-	for (let div of document.querySelectorAll('li')){
-		div.style.opacity = 0;
-		let image = div.querySelector('img');
+	for (let el of document.querySelectorAll('li')){
+		el.style.opacity = 0;
+		let image = el.querySelector('img');
 		image.onload = function(){
-			div.style.opacity = 1;
+			el.style.opacity = 1;
 		}
 		let title = getTitle(image.src).trim();
 		let h4 = document.createElement('h4');
 		h4.innerHTML = title;
 		image.alt = title;
-		div.appendChild(h4);
+		el.appendChild(h4);
 	}
 }
 
