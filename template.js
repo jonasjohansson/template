@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', init);
 
 function init(){
-	for (let div of document.querySelectorAll('#work div')){
+	for (let div of document.querySelectorAll('li')){
 		div.style.opacity = 0;
 		let image = div.querySelector('img');
 		image.onload = function(){
