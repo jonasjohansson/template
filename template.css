@@ -5,7 +5,7 @@
 	--font-size-body:	14px;
 	--font-size-h2:		18px;
 	--font-size-h3:		15px;
-	--font-family:		'Maison',system-ui,sans-serif;
+	--font-family:		'MaisonNeue-Book',system-ui,sans-serif;
 	--gray:				#f9f9f9;
 	--color-primary: 	rgb(160,160,160);
 	--color-secondary: 	rgb(128,128,128);
@@ -171,8 +171,8 @@ body > div {
 /* import */
 
 @font-face {
-    font-family:'Maison';
-    src:url('maison.woff2') format('woff2');
+    font-family:'MaisonNeue-Book';
+    src:url('MaisonNeue-Book.woff2') format('woff2');
     font-weight:normal;
     font-style:normal;
 }
