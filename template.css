@@ -94,7 +94,6 @@ body > div {
 #work li {
 	position:relative;
 	width:100%;
-	transition:opacity 600ms ease-in 500ms;
 }
 
 #work li:not(:last-of-type) {
@@ -118,6 +117,15 @@ body > div {
 
 #resume div[date-end]:not([date-end=""]):before {
 	content:attr(date-start) "-" attr(date-end);
+}
+
+/* special */
+
+.loading {
+	opacity:0;
+	background-color:gray;
+	transition:opacity 600ms ease-in 500ms;
+	will-change:opacity;
 }
 
 /* responsive */

@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', init);
 
 function init(){
 	for (let el of document.querySelectorAll('li')){
-		el.style.opacity = 0;
+		el.classList.add('loading');
 		let image = el.querySelector('img');
 		image.onload = function(){
-			el.style.opacity = 1;
+			el.classList.remove('loading');
 		}
 		let title = getTitle(image.src).trim();
 		let h4 = document.createElement('h4');
