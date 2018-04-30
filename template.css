@@ -5,6 +5,7 @@
 	--font-size-body:	14px;
 	--font-size-h2:		18px;
 	--font-size-h3:		15px;
+	--font-size-h4:		12px;
 	--font-family:		'MaisonNeue-Book',system-ui,sans-serif;
 	--gray:				#f9f9f9;
 	--color-primary: 	rgb(160,160,160);
@@ -52,7 +53,8 @@ h4 {
 	position:absolute;
 	left:0;
 	bottom:0;
-	padding:2px 8px 0 8px;
+	padding:0 6px;
+	font-size:var(--font-size-h4);
 	line-height:var(--base);
 	background-color:var(--gray);
 }
