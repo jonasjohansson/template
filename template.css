@@ -50,7 +50,7 @@ h3 {
 
 h4 {
 	position:absolute;
-	right:0;
+	left:0;
 	bottom:0;
 	padding:2px 8px 0 8px;
 	line-height:var(--base);
