@@ -53,7 +53,7 @@ h4 {
 	position:absolute;
 	left:0;
 	bottom:0;
-	padding:0 6px;
+	padding:4px 8px 0 4px;
 	font-size:var(--font-size-h4);
 	line-height:var(--base);
 	background-color:var(--gray);
@@ -94,6 +94,8 @@ body > div {
 #work li {
 	position:relative;
 	width:100%;
+	transition:opacity 600ms ease-in 500ms;
+	will-change:opacity;
 }
 
 #work li:not(:last-of-type) {
@@ -123,9 +125,6 @@ body > div {
 
 .loading {
 	opacity:0;
-	background-color:gray;
-	transition:opacity 600ms ease-in 500ms;
-	will-change:opacity;
 }
 
 /* responsive */
@@ -164,8 +163,11 @@ body > div {
 	#work {
 		width:60%;
 	}
-	#work section ul {
+	#work ul {
 		column-count:2;
+	}
+	#work li {
+  		break-inside:avoid;
 	}
 }
 
