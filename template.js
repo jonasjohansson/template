@@ -19,5 +19,6 @@ function getTitle(string){
 	let ext = string.split('.').pop();
 	let path = string.substring(string.indexOf('-')+1);
 	let title = path.slice(0,-ext.length-1);
-	return decodeURI(title);
+	// return decodeURI(title);
+	return title;
 }
