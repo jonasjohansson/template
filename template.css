@@ -5,7 +5,7 @@
 	--font-size-body:	14px;
 	--font-size-h2:		18px;
 	--font-size-h3:		15px;
-	--font-size-h4:		12px;
+	--font-size-small:	12px;
 	--font-family:		'MaisonNeue-Book',system-ui,sans-serif;
 	--gray:				#f9f9f9;
 	--color-primary: 	rgb(160,160,160);
@@ -49,16 +49,6 @@ h3 {
 	line-height:var(--base);
 }
 
-h4 {
-	position:absolute;
-	left:0;
-	bottom:0;
-	padding:4px 8px 0 4px;
-	font-size:var(--font-size-h4);
-	line-height:var(--base);
-	background-color:var(--gray);
-}
-
 a {
 	color:var(--color-primary);
 }
@@ -85,21 +75,28 @@ body > div {
 	line-height:0;
 }
 
-#work > * {
-	position:relative;
-	display:inline-block;
-	width:100%;
-}
-
-#work li {
+#work figure {
+	display:block;
 	position:relative;
 	width:100%;
 	transition:opacity 600ms ease-in 500ms;
 	will-change:opacity;
 }
 
-#work li:not(:last-of-type) {
+#work figure:not(:last-of-type) {
 	margin-bottom:calc(var(--base)*0.5);
+}
+
+#work figure:after {
+	content:attr(data-title);
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding:4px 8px 0 4px;
+	font-size:var(--font-size-small);
+	line-height:var(--base);
+	text-transform:uppercase;
+	background-color:var(--gray);
 }
 
 #resume {
@@ -152,21 +149,21 @@ body > div {
 	}
 }
 
-@media (min-width:1000px) {
+@media (min-width:1100px) {
 	#intro {
 		padding-bottom:0;
 	}
 	#intro,
 	#resume {
-		width:40%;
+		width:35%;
 	}
 	#work {
-		width:60%;
+		width:65%;
 	}
-	#work ul {
+	#work div {
 		column-count:2;
 	}
-	#work li {
+	#work div figure {
   		break-inside:avoid;
 	}
 }
