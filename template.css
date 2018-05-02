@@ -107,14 +107,14 @@ body > div {
 	overflow-scrolling:touch;
 }
 
-#resume div[date-start]:before {
+#resume div[data-date-start]:before {
 	padding-right:calc(var(--base)/4);
-	content:attr(date-start);
+	content:attr(data-date-start);
 	color:var(--color-secondary);
 }
 
-#resume div[date-end]:not([date-end=""]):before {
-	content:attr(date-start) "-" attr(date-end);
+#resume div[data-date-end]:not([data-date-end=""]):before {
+	content:attr(data-date-start) "-" attr(data-date-end);
 }
 
 /* special */
