@@ -87,8 +87,7 @@ body > div {
 	margin-bottom:calc(var(--base)*0.5);
 }
 
-#work figure:after {
-	content:attr(data-title);
+#work figure figcaption {
 	position:absolute;
 	left:0;
 	bottom:0;

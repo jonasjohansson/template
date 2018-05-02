@@ -1,16 +1,18 @@
 document.addEventListener('DOMContentLoaded', init);
 
 function init(){
-	for (let el of document.querySelectorAll('figure')){
-		el.classList.add('loading');
-		let image = el.querySelector('img');
+	for (let fig of document.querySelectorAll('figure')){
+		fig.classList.add('loading');
+		let image = fig.querySelector('img');
 		image.onload = function(){
-			el.classList.remove('loading');
+			fig.classList.remove('loading');
 		}
 		let title = getTitle(image.src).trim();
 		image.alt = title;
 		image.title = title;
-		el.setAttribute('data-title',title);
+		let figCaption = document.createElement('figcaption');
+		figCaption.innerHTML = title;
+		fig.appendChild(figCaption);
 	}
 }
 
