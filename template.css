@@ -10,6 +10,7 @@
 	--gray:				#f9f9f9;
 	--color-primary: 	rgb(160,160,160);
 	--color-secondary: 	rgb(128,128,128);
+	--color-tertiary: 	rgb(238,238,238);
 }
 
 body {
@@ -92,7 +93,7 @@ body > div {
 	font-size:var(--font-size-small);
 	line-height:var(--base);
 	text-transform:uppercase;
-	background-color:var(--gray);
+	background-color:var(--color-tertiary);
 }
 
 #resume {
@@ -158,9 +159,6 @@ body > div {
 	}
 	#work div {
 		column-count:2;
-		/*display:grid;*/
-		/*grid-column-gap:calc(var(--base)/2);*/
-		/*grid-template-columns: calc(50% - var(--base)/4) calc(50% - var(--base)/4);*/
 	}
 	#work div figure {
   		break-inside:avoid;
