@@ -6,7 +6,7 @@
 	--font-size-h2:		18px;
 	--font-size-h3:		15px;
 	--font-size-small:	12px;
-	--font-family:		'MaisonNeue-Book',system-ui,sans-serif;
+	--font-family:		'MaisonNeue-Book',system-ui,-apple-system;
 	--gray:				#f9f9f9;
 	--color-primary: 	rgb(160,160,160);
 	--color-secondary: 	rgb(128,128,128);
@@ -17,14 +17,11 @@ body {
 	font-size:var(--font-size-body);
 	line-height:var(--base);
 	box-sizing:border-box;
-	padding:0;
-	margin:0;
 }
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
 	text-transform:uppercase;
 	font-weight:400;
 }
@@ -160,10 +157,13 @@ body > div {
 		width:65%;
 	}
 	#work div {
-		column-count:2;
+		/*column-count:2;*/
+		display:grid;
+		grid-column-gap:calc(var(--base)/2);
+		grid-template-columns: calc(50% - var(--base)/4) calc(50% -var(--base)/4);
 	}
 	#work div figure {
-  		break-inside:avoid;
+  		/*break-inside:avoid;*/
 	}
 }
 
