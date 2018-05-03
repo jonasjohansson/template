@@ -89,7 +89,7 @@ body > div {
 	position:absolute;
 	left:0;
 	bottom:0;
-	padding:4px 8px 0 4px;
+	padding:4px 8px 0 8px;
 	font-size:var(--font-size-small);
 	line-height:var(--base);
 	text-transform:uppercase;
