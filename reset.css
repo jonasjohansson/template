@@ -29,6 +29,10 @@ ul {
 	white-space:nowrap;
 }
 
+input:focus {
+	outline-offset:0;
+}
+
 iframe,
 img {
 	width:100%;
