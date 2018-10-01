@@ -1,5 +1,4 @@
-/*@import url('reset.css');*/
-@import url('https://unpkg.com/modern-normalize@0.5.0/modern-normalize.css');
+@import url('reset.css');
 
 :root {
 	--base: 24px;
