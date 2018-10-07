@@ -8,7 +8,7 @@
 html {
     font-size: 62.5%;
     font-family: system-ui, -apple-system, sans-serif;
-    -webkit-text-size-adjust: none;
+    -webkit-text-size-adjust: 100%; /* https://stackoverflow.com/questions/3226001/some-font-sizes-rendered-larger-on-safari-iphone */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
