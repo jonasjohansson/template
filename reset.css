@@ -26,6 +26,7 @@ a:hover {
 
 input {
     font-family: inherit;
+    color: inherit;
 }
 
 input::-webkit-color-swatch-wrapper {
