@@ -30,3 +30,7 @@ footer img {
 	position: relative;
 	padding-bottom: 56.25%;
 }
+
+::-webkit-scrollbar {
+	display: none;
+}
