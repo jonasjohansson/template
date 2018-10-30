@@ -3,6 +3,10 @@ a {
 	opacity: 0.8;
 }
 
+p {
+	max-width: 600px;
+}
+
 hr {
 	border-top: 0;
 	opacity: 0.2;
