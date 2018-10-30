@@ -1,3 +1,7 @@
+p {
+	max-width: 600px;
+}
+
 a {
 	color: inherit;
 	opacity: 0.8;
@@ -34,12 +38,4 @@ footer img {
 
 ::-webkit-scrollbar {
 	display: none;
-}
-
-/* responsive */
-
-@media (min-width: 700px) {
-	section {
-		width: 50%;
-	}
 }
