@@ -2,6 +2,11 @@ h1 {
 	text-transform: uppercase;
 }
 
+p,
+ul {
+	max-width: 600px;
+}
+
 a {
 	color: inherit;
 	opacity: 0.8;
@@ -36,6 +41,21 @@ footer img {
 	padding-bottom: 56.25%;
 }
 
+video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+}
+
 ::-webkit-scrollbar {
 	display: none;
+}
+
+/* responsive */
+
+@media (min-width: 700px) {
+	video {
+		max-width: 700px;
+	}
 }
