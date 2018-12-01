@@ -165,12 +165,27 @@ body > div {
 	}
 }
 
+@media screen {
+	[data-only-print] {
+		display: none;
+	}
+}
+
 /* print */
 
 @media print {
+	[data-no-print],
 	#contact,
-	#work {
+	#work,
+	hr {
 		display: none !important;
+	}
+	* {
+		color: black;
+		filter: none !important;
+	}
+	[data-page-break] {
+		page-break-after: always;
 	}
 }
 
