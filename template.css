@@ -165,15 +165,9 @@ body > div {
 	}
 }
 
-@media screen {
-	[data-only-print] {
-		display: none;
-	}
-}
-
 /* print */
 
-@media print {
+@media only print {
 	[data-no-print],
 	#contact,
 	#work,
@@ -186,6 +180,12 @@ body > div {
 	}
 	[data-page-break] {
 		page-break-after: always;
+	}
+}
+
+@media not print {
+	[data-only-print] {
+		display: none;
 	}
 }
 
