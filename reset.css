@@ -24,9 +24,11 @@ a:hover {
     text-decoration: underline;
 }
 
-input {
+input,
+textarea {
     font-family: inherit;
     color: inherit;
+    line-height: inherit;
 }
 
 input::-webkit-color-swatch-wrapper {
@@ -44,6 +46,12 @@ ul {
 
 input:focus {
     outline-offset: 0;
+}
+
+button,
+textarea {
+    outline: none;
+    font-family: inherit;
 }
 
 iframe,
