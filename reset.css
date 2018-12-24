@@ -54,6 +54,10 @@ textarea {
     font-family: inherit;
 }
 
+textarea {
+    resize: none;
+}
+
 iframe,
 img {
     width: 100%;
