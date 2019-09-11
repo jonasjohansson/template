@@ -8,6 +8,7 @@ function init() {
 			fig.classList.remove('loading');
 		};
 		let title = getTitle(image.src).trim();
+		if (image.alt !== '') return;
 		image.alt = title;
 		image.title = title;
 		let figCaption = document.createElement('figcaption');
