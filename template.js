@@ -15,6 +15,9 @@ function init() {
 		figCaption.innerHTML = title;
 		fig.appendChild(figCaption);
 	}
+	for (let a of document.querySelectorAll('p a')) {
+		a.target = '_blank';
+	}
 }
 
 function getTitle(string) {
