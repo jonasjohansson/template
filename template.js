@@ -5,8 +5,8 @@ function init() {
 	for (const fig of figs) {
 		fig.classList.add('loading')
 		let image = fig.querySelector('img')
-		image.onload = function () {
-			image.parentElement.classList.remove('loading')
+		image.onload = function (fig) {
+			fig.classList.remove('loading')
 		}
 		let title = getTitle(image.src).trim()
 		if (image.alt.length !== 0) continue
