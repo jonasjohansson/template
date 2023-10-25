@@ -149,18 +149,24 @@ body > div {
 	#intro {
 		padding-bottom: 0;
 	}
-	#intro,
+	/* #intro,
 	#resume {
-		/* width: 35%; */
+		width: 35%;
 	}
 	#work {
-		/* width: 65%; */
-	}
+		width: 65%;
+	} */
 	#work div {
 		column-count: 2;
 	}
 	#work div figure {
 		break-inside: avoid;
+	}
+}
+
+@media not print and (min-width: 1600px) {
+	#work div {
+		column-count: 3;
 	}
 }
 
