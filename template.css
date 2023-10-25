@@ -152,10 +152,10 @@ body > div {
 	}
 	#intro,
 	#resume {
-		max-width: 35vw;
+		width: 35%;
 	}
 	#work {
-		max-width: 65%;
+		width: 65%;
 	}
 	#work div {
 		column-count: 2;
