@@ -151,10 +151,10 @@ body > div {
 	}
 	#intro,
 	#resume {
-		width: 35%;
+		/* width: 35%; */
 	}
 	#work {
-		width: 65%;
+		/* width: 65%; */
 	}
 	#work div {
 		column-count: 2;
