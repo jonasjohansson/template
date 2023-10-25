@@ -145,7 +145,7 @@ body > div {
 	}
 } */
 
-/* @media not print and (min-width: 1100px) {
+@media not print and (min-width: 1100px) {
 	#intro {
 		padding-bottom: 0;
 	}
@@ -162,7 +162,7 @@ body > div {
 	#work div figure {
 		break-inside: avoid;
 	}
-} */
+}
 
 /* print */
 
