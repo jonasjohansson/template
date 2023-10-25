@@ -128,7 +128,8 @@ body > div {
 		text-align: center;
 	}
 }
-/* @media not print and (min-width: 700px) {
+
+@media screen and (min-width: 700px) {
 	#intro,
 	#resume {
 		width: 50%;
@@ -143,19 +144,19 @@ body > div {
 		overflow: scroll;
 		-webkit-overflow-scrolling: touch;
 	}
-} */
+}
 
 @media screen and (min-width: 1100px) {
 	#intro {
 		padding-bottom: 0;
 	}
-	/* #intro,
+	#intro,
 	#resume {
-		width: 35%;
+		max-width: 35vw;
 	}
 	#work {
-		width: 65%;
-	} */
+		max-width: 65%;
+	}
 	#work div {
 		column-count: 2;
 	}
